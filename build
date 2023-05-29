@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+Name=elliotwutingfeng/take_a_shot
+
+docker build -t "$Name" .

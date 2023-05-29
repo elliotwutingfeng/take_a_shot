@@ -1,0 +1,2 @@
+Pillow==9.5.0
+selenium==4.9.1
