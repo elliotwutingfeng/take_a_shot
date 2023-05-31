@@ -136,6 +136,7 @@ def take_snapshot(
     """
     options = Options()
     options.add_argument("--headless")
+    options.add_argument("--disable-dev-tools")
     # not good for security but prevents `DevToolsActivePort file doesn't exist` error in Docker
     options.add_argument("--no-sandbox")
     # Default shared memory directory size of 64 MB is not sufficient
