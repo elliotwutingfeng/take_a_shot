@@ -11,4 +11,4 @@ else
     echo "'$i'"
   done
 fi
-) | xargs docker run --rm elliotwutingfeng/take_a_shot
+) | xargs docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot

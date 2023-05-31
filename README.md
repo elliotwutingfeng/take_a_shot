@@ -44,7 +44,7 @@ Then either run
 or run
 
 ```bash
-docker run --rm elliotwutingfeng/take_a_shot <URL> [options]
+docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot <URL> [options]
 ```
 
 ## Output Format
@@ -61,13 +61,13 @@ docker run --rm elliotwutingfeng/take_a_shot <URL> [options]
 ### PC
 
 ```bash
-docker run --rm elliotwutingfeng/take_a_shot "https://example.com"
+docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot "https://example.com"
 ```
 
 ### iPhone
 
 ```bash
-docker run --rm elliotwutingfeng/take_a_shot "https://example.com" --window-size 414x735 --ua 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
+docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot "https://example.com" --window-size 414x735 --ua 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
 ```
 
 ## Help
