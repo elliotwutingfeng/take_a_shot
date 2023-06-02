@@ -191,6 +191,7 @@ def capture_screen_area(
     x_delta = client_info.window_width
     y_delta = client_info.window_height - 200
 
+    Image.MAX_IMAGE_PIXELS = 357913940  # Support larger images; ~1GB for a 24-bit (3 bpp) image.
     canvas = Image.new("RGB", (client_info.full_width, client_info.full_height))
     while y_pos > -y_delta:
         x_pos = 0
