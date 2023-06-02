@@ -41,7 +41,7 @@ Then either run
 ./capture <URL> [options]
 ```
 
-or run
+or alternatively run
 
 ```bash
 docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot <URL> [options]
@@ -58,22 +58,26 @@ docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng
 
 ## Examples
 
-### PC
+### Default User Agent
 
 ```bash
 docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot "https://example.com"
 ```
 
-### iPhone
+### Specify User Agent
 
 ```bash
-docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot "https://example.com" --window-size 414x735 --ua 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
+docker run --cap-drop=all --security-opt=no-new-privileges --rm elliotwutingfeng/take_a_shot "https://example.com" --window-size 390x844 --ua 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/113.0 Mobile/15E148 Safari/605.1.15'
 ```
 
 ## Help
 
 ```bash
-usage: takeashot.py [-h] [--screenshot] [--source-code] [--window-size WINDOW_SIZE] [--ua USER_AGENT] [--wait WAIT] [--lang LANG] [--language LANGUAGE] [-v] [--vv] url
+usage: takeashot.py [-h] [--screenshot] [--source-code]
+                    [--window-size WINDOW_SIZE] [--ua USER_AGENT]
+                    [--wait WAIT] [--lang LANG] [--language LANGUAGE] [-v]
+                    [--vv]
+                    url
 
 positional arguments:
   url                   specify URL
@@ -85,7 +89,7 @@ options:
   --window-size WINDOW_SIZE
                         specify window size like 1200x800
   --ua USER_AGENT       specify user-agent
-  --wait WAIT           specify wait seconds after scroll
+  --wait WAIT           specify wait seconds after scroll down
   --lang LANG           set LANG environment variable
   --language LANGUAGE   set LANGUAGE environment variable
   -v                    set LogLevel to INFO
