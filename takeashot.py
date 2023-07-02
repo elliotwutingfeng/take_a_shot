@@ -141,14 +141,11 @@ def take_snapshot(
     options.add_argument("--no-sandbox")
     # Default shared memory directory size of 64 MB is not sufficient
     options.add_argument("--shm-size=2gb")
-    desired_capabilities = dict(acceptInsecureCerts=True)
     if user_agent:
         options.add_argument(f"user-agent={user_agent}")
     if window_size:
         options.add_argument(f"window-size={window_size[1]},{window_size[0]}")
-    driver = webdriver.Chrome(
-        options=options, desired_capabilities=desired_capabilities
-    )
+    driver = webdriver.Chrome(options=options)
 
     driver.get(url)
     driver.implicitly_wait(5)
