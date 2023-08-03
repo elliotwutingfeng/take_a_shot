@@ -1,14 +1,27 @@
-# Take A Shot
+<div align="center">
 
-[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://python.org)
-[![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
-[![Google Chrome](https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white)](https://google.com/chrome)
+  <h3 align="center">Take A Shot</h3>
+  <img src="images/lens.svg" alt="Lens" width="200" height="200">
 
-[![MIT License](https://img.shields.io/badge/LICENSE-MIT-GREEN?style=for-the-badge)](LICENSE)
+  <p align="center">
+    Capture screenshot and/or HTML source code data of any given webpage and print it to stdout.
+  </p>
 
-Capture screenshot and/or HTML source code data of any given webpage and print it to stdout.
+  <p align="center">
+    <strong>Output format:</strong> JSON string containing b64-encoded data.
+  </p>
 
-**Output format:** JSON string containing b64-encoded data.
+  <p align="center">
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python"/></a>
+  <a href="https://docker.com"><img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/></a>
+  <a href="https://google.com/chrome"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white" alt="Google Chrome"/></a>
+  </p>
+
+  <p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-GREEN?style=for-the-badge" alt="MIT license"/></a>
+  </p>
+
+</div>
 
 ## Implementation details
 
@@ -25,7 +38,7 @@ Tested on the following environment
 ### Linux
 
 - Linux 6.1
-- Docker Version 23.0.4
+- Docker Version 24.0.5
 
 ## Usage
 
