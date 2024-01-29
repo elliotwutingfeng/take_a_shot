@@ -37,8 +37,8 @@ Tested on the following environment
 
 ### Linux
 
-- Linux 6.1
-- Docker Version 24.0.5
+- Linux 6.6
+- Docker Version 24.0.7
 
 ## Usage
 
