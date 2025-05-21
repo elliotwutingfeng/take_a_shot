@@ -111,4 +111,4 @@ options:
 
 ## Credits
 
-[Link](CREDITS.md)
+[More Information](CREDITS.md)
