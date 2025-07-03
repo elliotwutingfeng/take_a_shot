@@ -1,0 +1,11 @@
+[project]
+dependencies = [
+  "pillow==11.3.0",
+  "selenium==4.34.0",
+  "typing-extensions==4.14.0",
+]
+description = "Capture screenshot and/or HTML source code data of any given webpage and print it to stdout."
+name = "take_a_shot"
+readme = "README.md"
+requires-python = ">=3.13"
+version = "0.0.1"
