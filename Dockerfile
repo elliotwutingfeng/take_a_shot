@@ -10,8 +10,7 @@ RUN apk add --no-cache \
     ttf-freefont \
     && rm -rf /var/cache/apk/*
 
-ENV CHROME_BIN=/usr/bin/chromium-browser \
-    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV CHROME_BIN=/usr/bin/chromium-browser
 
 RUN addgroup -S unprivilegeduser && adduser -S unprivilegeduser -G unprivilegeduser
 USER unprivilegeduser

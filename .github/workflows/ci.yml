@@ -26,6 +26,9 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
+            - name: Install uv
+              uses: astral-sh/setup-uv@v5
+
             - name: setup python
               uses: actions/setup-python@v5
               with:
@@ -33,6 +36,4 @@ jobs:
 
             - name: Format Python with ruff
               run: |
-                  python -m pip install --upgrade pip
-                  pip install ruff
-                  ruff format . --check
+                  uvx ruff format . --check
