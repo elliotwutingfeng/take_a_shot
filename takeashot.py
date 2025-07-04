@@ -25,6 +25,7 @@ def get_args() -> Namespace:
         Namespace: Args.
     """
     parser = ArgumentParser()
+    parser.color = True
     parser.add_argument("url", help="specify URL")
     parser.add_argument("--screenshot", help="Take screenshot", action="store_true")
     parser.add_argument(
