@@ -1,7 +1,7 @@
 [project]
 dependencies = [
   "pillow==11.3.0",
-  "selenium==4.34.1",
+  "selenium==4.34.2",
   "typing-extensions==4.14.1",
 ]
 description = "Capture screenshot and/or HTML source code data of any given webpage and print it to stdout."
