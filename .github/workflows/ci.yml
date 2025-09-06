@@ -29,11 +29,6 @@ jobs:
             - name: Install uv
               uses: astral-sh/setup-uv@v6
 
-            - name: setup python
-              uses: actions/setup-python@v6
-              with:
-                  python-version: "3.x"
-
             - name: Format Python with ruff
               run: |
                   uvx ruff format . --check
