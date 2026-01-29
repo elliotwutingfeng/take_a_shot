@@ -6,7 +6,7 @@ on: [push, pull_request]
 
 jobs:
     format-markdown:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-slim
 
         steps:
             - name: Checkout
@@ -20,7 +20,7 @@ jobs:
                   git diff --cached --exit-code
 
     format-python:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-slim
 
         steps:
             - name: Checkout
