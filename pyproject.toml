@@ -1,6 +1,6 @@
 [project]
 dependencies = [
-  "pillow==12.2.0",
+  "pillow==12.3.0",
   "selenium==4.45.0",
   "typing-extensions==4.15.0",
 ]
