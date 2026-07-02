@@ -2,7 +2,7 @@
 dependencies = [
   "pillow==12.3.0",
   "selenium==4.45.0",
-  "typing-extensions==4.15.0",
+  "typing-extensions==4.16.0",
 ]
 description = "Capture screenshot and/or HTML source code data of any given webpage and print it to stdout."
 name = "take_a_shot"
